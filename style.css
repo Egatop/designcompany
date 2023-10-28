@@ -384,6 +384,12 @@ html:hover .spider {
         text-align: left;
        
     }
+    .nav-list li {
+        flex-direction: column;
+        text-align: left;
+        margin-top: 10%;
+       
+    }
 
     /* active */
 
@@ -414,4 +420,4 @@ html:hover .spider {
     }
 
 
-}
+  }
