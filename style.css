@@ -186,7 +186,7 @@ html:hover .spider {
 .spider .spiderweb {
     width: 2px;
     height: 10vh;  /* высота паутины, чем меньше число, тем она короче */
-    margin-left: 49px; /* двигаем паутину влево-вправо */
+    margin-left: 5vh; /* двигаем паутину влево-вправо */
     background: rgba(255,255,255, .7); /* цвет паутины */
 }
 .j{
