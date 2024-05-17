@@ -1,52 +1,26 @@
-@font-face {
-    font-family: 'EntezareZohoor2';
-    src:url('fonts/Ustroke-Regular.ttf') ;
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    scroll-behavior: smooth;
+    overflow: scroll;
 }
-/* пропишите стили */
 body {
     margin: 0;
-    background-image: url(img/back.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    background-position: center center;
-    background-attachment: fixed;
-     
 }
+
 header {
-    background-image: url(img/header.webp);
-    background-repeat: no-repeat;
+    background:url(image/head.jpg);
     background-size: cover;
-    object-fit: cover;
-    background-position: center center;
-     background-attachment: fixed;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     font-family: 'EntezareZohoor2';
-     width: 100%;
-     position: fixed;
-     top: 0;
-     z-index: 1;
- 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
-     
-}
-
+    padding-bottom: 5%;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
   
-  @keyframes ani {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-header h1{
-    font-size:200%;
-    position: relative;
-    right: 10%;
-    
 }
+
+
+/*код навигации копировал с кодлэнда менять не букду :)*/
 .container {
     width: 100%;
     max-width: 1200px;
@@ -57,368 +31,462 @@ header h1{
     justify-content: space-between;
 }
 nav {
-    width:70%;
-}
-
-
-h2 {
-    text-align: center;
-    color: #980002;
-    font-family: 'EntezareZohoor2';
-    font-size: 3em;
+    width:40%;
     position: relative;
-    top:5%;
-    opacity: 0;
-    animation: ani 2.5s forwards;
-}
-h3 {
-    text-align: center;
-    color: aliceblue;
-    font-family: 'EntezareZohoor2';
-    font-size: 3em;
-
-}
-.answer{
-    display: flex;
-    justify-content: space-evenly;
-}
-.tes {
-    text-align: center;
-    color: aliceblue;
-    font-family: 'EntezareZohoor2';
-    font-size: 2em;
-    width: 50%;
+    top:1em;
 }
 ul {
     display:flex;
     justify-content:space-between;
-    font-size:150%;
-    padding-top:1%;
-    position: relative;
-    left: 5%;
-    
+    align-items: center;
+}
+.baner{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+h2 {
+    font-size:30px;
+    margin-top: 3%;
+    margin-left: 3%;
+
+   
 }
 li {
     list-style:none;
-   
 }
 a {
+    font-size: 25px;
     text-decoration:none;
     color:#000;
+    font-weight:800;
+}
+header h1 {
+    font-size:80px;
+    width:30%;
+    color:white;
+    margin-top: 10%;
+
+}
+header p {
+    font-size: 25px;
+    font-weight: 900;
+   text-align: center;
+   background-color: aliceblue;
+   width:35%;
+   border: solid;
+   margin-top: 10%;
+ 
+}
+
+body {
+    font-family: 'lato', sans-serif;
+    background-color: #F2E4D2;
+    text-align: center;
+  }
+.buy {
+    z-index: 1;
+    background-color: transparent;
+    position: relative;
+    margin-top: 5%;
+    margin-right: 50%;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 34px;
+    color: white;
+    text-decoration: none;
+    border: solid 5px #FFCA7A;
+    box-shadow: 12px 12px 0  -5px #ffCA7A;
+    transition: .3s;
+     overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+.buy:before {
+    display: inline-block;
+    transition: bottom, 0.35s;
+    position: absolute;
+    transform: skew(-50deg);
+    top: 0px;
+    left: 260px;
+    background-color: #ffCA7A;
+    content: "　";
+    width: 220px;
+    height: 120px;
+    z-index: -1;
+  }
+  
+.buy:hover {
+     box-shadow: 0px 0px 0  0px #ffCA7A;
+  }
+  
+.buy:hover:before {
+    top: -40px;
+    left: -40px;
+  }
+main h2{
+    color: #FAFEED;
+    font-size:80px;
+    
+}
+.op {
+    opacity: 100;
+  }
+.block {
+    margin-bottom: 5%;
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     
 
 }
-main{
+
+.karusel h3{
+    font-size: 30px;
+    color:#BCFF00;
+   
+}
+.karusel p{
+    font-size: 22px;
+    color:black;
+}
+.karusel a{
+    font-size: 22px;
+    color:#FFD704;
+}
+.section1{
+    padding-top: 5%;
+    background:url(image/section1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
-}
-main h1 {
-    display: flex;
-    align-items: center;
-    position: relative;
-    left: 20%;
-    bottom: 2vh;
-    color: aliceblue;
-    font-family: 'EntezareZohoor2';
-    font-size: 3em;
 
 }
-.logo img{
-    position: relative;
-    top:10vh;
+.section2{
+    padding-top: 5%;
+    background:url(image/section2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
 
 }
-.logo {
+.section3{
+    padding-top: 5%;
+    background:url(image/map.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 5%;
+
+}
+.company{
+    margin-left: 5%;
     margin-top: 5%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around
-}
-.halloween-animation{
-    width:45vh;
-    height: 45vh;
-
-}
-
-.history {
-    width: 50%;
-    position: relative;
-    top:8vh;
-
-}
-.btn, .btn2  {
-    background-color:#fb7d07;
-    color: white;
-    font-weight: 900;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-left:1%;
-    font-size:2em;
-    height: 2em;
-    font-family: 'EntezareZohoor2';
-    position: relative;
-    top:6vh;
-    opacity: 0;
-    animation: ani 2.5s forwards;
-
-}
-.start {
     display: flex;
     justify-content: space-around;
 }
-html:hover .spider {
-    top: -120%; 
+.company p {
+    width: 80%;
+    color:#FAFEED;
+    font-size: 25px;
 }
+.company a{
 
-.spider {
-    position: fixed;  /* Заменяем на fixed, если хотите чтобы паучок был прилеплен на экране */
-    display: inline-block;
-    top: 0; /*отступ сверху*/
-    right: 70%; /*отступ слева*/
-
-    /* 4. Animatie */
-    animation: swing 2s infinite;
-    transform-origin: top;
-
-    /* Bonus */
-    transition: 1s ease-in-out;
-}
-
-.spider .spiderweb {
-    width: 2px;
-    height: 10vh;  /* высота паутины, чем меньше число, тем она короче */
-    margin-left: 5vh; /* двигаем паутину влево-вправо */
-    background: rgba(255,255,255, .7); /* цвет паутины */
-}
-.j{
-    height:8vh;
-}
-.spider .body {
-    width: 11vh;  /* ширина тела паука */
-    height: 9vh; /* высота тела паука */
-    background:  black;; /* цвет тела */
-    position: relative;
-    border-radius: 50%;
-}
-
-.spider .body .eye {
-    width: 3vh; /* ширина глаз */
-    height: 3vh; /* высота глаз */
-    position: absolute;
-    bottom: 2vh;
-    background: #fff; /* цвет глаз */
-    border-radius: 50%;
-}
-
-.spider .body .eye.left {
-    left: 1vh; /* изменить положение левого глаза */
-}
-
-.spider .body .eye.right {
-    right: 1vh; /* изменить положение правого глаза */
-}
-
-.spider .body .eye:after {
-    background: #000; /* цвет зрачков */
-    width: 7px; /* ширина зрачка */
-    height: 7px; /* высота зрачка */
-    content: '';
-    display: block;
-    margin: 55%;
-    border-radius: 50%;
-
-    /* 3. Animatie */
-    animation: look 8s infinite;
-}
-
-.spider .legs .leg {
-    width: 8vh; /* ширина лапок */
-    height: 4vh; /* высота лапок */
-    margin-top: -20px; 
-    border: 5px solid transparent;
-    border-top-color:  black; /* цвет лапок */
-    border-radius: 40px 40px 0 0;
-}
-
-.spider .legs {
-    position: absolute;
-    bottom: -10%;
-    z-index: -1;
-}
-
-.spider .legs.left {
-    left: -70%; /* изменить положение лапок слева */
-}
-.spider .legs.right {
-    right: -60%; /* изменить положение лапок слева */
-}
-
-
-.legs.left .leg:nth-child(1){
-    transform: rotate(10deg);
-    margin-left: 10px;
-}
-.legs.right .leg:nth-child(1){
-    transform: rotate(-10deg);
-    margin-left: -10px;
-}
-
-
-.legs.left .leg:nth-child(2){
-    transform: rotate(-20deg);
-    margin-left: 20px;
-}
-.legs.right .leg:nth-child(2){
-    transform: rotate(20deg);
-    margin-left: -20px;
-}
-
-
-.legs.left .leg:nth-child(3){
-    transform: rotate(-50deg);
-    margin-left: 30px;
-}
-.legs.right .leg:nth-child(3){
-    transform: rotate(50deg);
-    margin-left: -30px;
-}
-
-/* 1. Animatie */
-@keyframes look {
-    0%, 40%, 100% {
-        transform: translateX(0); 
-    }
-
-    45%, 95% {
-        transform: translateX(-110%);
-    }
-}
-
-.info, .info2 {
-    color: aliceblue;
-    font-size: 1.5em;
-    font-family: 'EntezareZohoor2';
-    padding: 10px 25px;
-  }
-  
-  .info__switch, .info__switch2 {
-    display: none;
-  }
-  
-  .info__body,  .info__body3 {
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.4s;
-  }
-  
-  .info__switch:checked~.info__body, .info__switch2:checked~.info__body3 {
-    margin-top:5%;
-    max-height: 200vh;
-  }
-  
-  .info__headline::before, .info__headline2::before {
-    content: "";
-    position: absolute;
-    left: -18px;
-    top: 4px;
-    border: 6px solid #39739d;
-    border-bottom-color: transparent;
-    border-right-color: transparent;
-    border-left-color: transparent;
+    font-size: 22px;
+    color:#574D9C;
     
+    
+}
+
+.company button{
+    background-color:#FFFFFF;
+    border:1px solid;
+    border-color:#574D9C ;
+}
+.company button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.block2{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+  
+}
+.block2 p{
+    width: 100%;
+    font-size: 20px;
+    color:#323A5B;
+    
+}
+.block2 h3{
+    color:#323A5B;
+    font-size: 80px;
+}
+.menu_item {
+    margin-right: 1em;
+    display: flex;
+}
+.progress-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 4px; 
+    width: 0%;
+    background:  #A8E4A0; 
+}
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background: black;
+
+}
+#map {
+    height: 75vh;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+
+}
+footer{
+    background-color: #595e4d;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 5%;                         
+    padding-top: 5%;
+    
+}
+
+footer h4{
+    color:#7F924B;
+    font-size: 30px;
+
+}
+footer p{
+    color: #FFFFFF;
+    font-size: 26px;
+}
+footer a {
+    color: #8d7818;
+}
+@media only screen and (max-width: 1200px) {
+
+    .block2 h3{
+        font-size: 60px;
+    }
+    header h1 {
+        font-size:60px;
+    
+    
+    }
+}
+    @media only screen and (max-width: 992px) {
+        nav {
+            width:50%;
+        
+        }
+        footer p{
+            font-size: 22px;
+        }
+        main h2{
+            font-size:60px;
+        }
+    }
+
+@media only screen and (max-width: 768px) {
+    nav {
+        width:80%;
+    
+    }
+    .buy {
+        font-size: 14px;
+        padding: 10px 30px;
+        box-shadow: 10px 10px 0  -5px #ffCA7A;
+      }
+      header h1 {
+        font-size:40px;
+    }
+    main h2{
+        font-size:40px;
+    }
+    .karusel h3{
+        font-size: 18px;
+    }
+    .karusel p{
+        font-size: 16px;
+    }
+    .karusel a{
+        font-size: 16px;
+
+    }
+    
+    .block2 h3{
+        font-size: 30px;
+    }
+    .block p{
+        font-size: 20px;
+    }
+    .company a{
+
+        font-size: 18px;
+    }
+    footer p{
+        font-size: 14px;
+    }
+    footer h4{
+        color:#7F924B;
+        font-size: 22px;
+    
+    }
+    footer a {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 480px) {
+nav{
+    display: none;
+}
+.block2{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+  
+}
+.baner p{
+    font-size: 18px;
+}
+.buy {
+    font-size: 12px;
+    padding: 6px 20px;
+    box-shadow: 6px 16px 0  -5px #ffCA7A;
   }
+  header h1 {
+    font-size:30px;
+}
+main h2{
+    font-size:30px;
+}
+.karusel h3{
+    font-size: 16px;
+}
+.karusel p{
+    font-size: 14px;
+}
+.karusel a{
+    font-size: 14px;
 
-  @media (min-width: 320px) and (max-width: 1200px) {
-    /*Бургер*/
-    .burger-menu {
-        display: block;
-        position: relative;
-        left: 90%;
-        top:5vh;
-        width: 30px;
-        height: 20px;
-        transition: 0.3s ease;
-    }
+}
 
-    .burger-menu::before,
-    .burger-menu::after {
-        content: ''; /* пустой контент */
-        background: black; /*цвет бургера*/
-        position: absolute; /* позиция для общего блока*/
-      
-        width: 100%; /* ширина*/
-        height: 2px; /* толщина полосок бургера */
-        transition: 0.3s ease;
-    }
+.block2 h3{
+    font-size: 22px;
+}
+.block p{
+    font-size: 14px;
+}
+.company a{
 
-    .burger-menu::before {
-        top: 0; /* расположение верхней линии бургера */
-    }
-    .burger-menu span { /*средняя линия в виде span*/
-        background: black;
-        position: absolute; 
-        width: 100%;
-        top: 9px;
-        height: 2px; 
-    }
-    .burger-menu::after {
-        bottom: 0; /* расположение нижней линии бургера */
-    }
+    font-size: 14px;
+}
+footer p{
+    font-size: 14px;
+}
+footer h4{
+    color:#7F924B;
+    font-size: 20px;
 
+}
+footer a {
+    font-size: 12px;
+}
+.menu-small {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    background: white;
+    z-index: 999;
+    transform: translateX(-100%);
+}
 
-    /*Меню*/
-    .main-nav {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50vw;
-        height:120vh;
-        background-color:var(--color1);
-        border: 1px solid #fff;
-        padding: 20px 10px;
-        transform: translateX(100%);
-        background-image:url("img/dack.webp") ;
-    }
+.menu_small_item {
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+footer{
+    flex-direction: column;
+    
+}
+.menu_small_item:first-child {
+    padding-top: calc(50px + 2em);
+}
 
-    .nav-list {
-        flex-direction: column;
-        text-align: left;
-       
-    }
-    .nav-list li {
-        flex-direction: column;
-        text-align: left;
-        margin-top: 10%;
-       
-    }
+.menu_small_icon {
+    position: absolute;
+    top: 1em;
+    left: 80%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
 
-    /* active */
+}
 
-    .burger-menu.active {
-        z-index: 3;
-        transform: translateX(-45vw);
-        transition: 0.3s ease;
-    }
-
-    .burger-menu.active::before {
-        transform: rotate(45deg);
-        top: 9px;
-        transition: 0.3s ease;
-    }
-    .burger-menu.active::after {
-        transform: rotate(-45deg);
-        bottom: 9px;
-        transition: 0.3s ease;
-    }
-
-    .burger-menu.active span {
-        transform: scale(0);
-    }
-
-    .main-nav.active {
-       transform: translate(0);
-       transition: 0.3s ease;
-    }
-
-
+@keyframes appear {
+	70%{
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+	100%{
+		opacity: 0;
+		transform: scale(0, 0);
+	}
+}
+@-webkit-keyframes appear {
+	70%{
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+	100%{
+		opacity: 0;
+		transform: scale(0, 0);
+	}
+}
+.cursor {
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	margin: -20px 0 0 -20px;
+	border-radius: 50%;
+	background: #ef2c68;
+	animation: appear .5s;
+	-webkit-animation: appear .5s;
 }
