@@ -1,612 +1,77 @@
-function run(){
-    let i = 0
-    let answer = document.querySelector('h3');
-    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>С какого праздника начинается история хэллоуина?</h2>"
-    let test = document.querySelector('.go');
-    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Манжой'><input type='button' class='btn2' value='Самайн'></div>"
 
-    function run2() {
-        i ++
-        let answer = document.querySelector('h3');
-        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>В каком веке в США стал популярным хэллоуин?</h2>"
-        let test = document.querySelector('.go');
-        test.innerHTML = "<div class='answer'><input type='button' class='btn' value='XIX веке'><input type='button' class='btn2' value='XXI веке'></div>"
-        function run3() {
-            i++
-            let answer = document.querySelector('h3');
-            answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Кем был создан образ графа Дракулы?</h2>"
-            let test = document.querySelector('.go');
-            test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Брэмомом Стокером'><input type='button' class='btn2' value='Джоном Хевином'></div>"
-            function run5() {
-                i++
-                let answer = document.querySelector('h3');
-                answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Кого из людей считали Графом Дракулой?</h2>"
-                let test = document.querySelector('.go');
-                test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Влад Цепеш'><input type='button' class='btn2' value='Илона Силадьи'></div>"
-            
-                function run7(){
-                    i++
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                function run8(){
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'></div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                let button = document.querySelector('.btn');
-                button.addEventListener('click', run7);
-                let button2 = document.querySelector('.btn2');
-                button2.addEventListener('click', run8);
-            }
-            function run6() {
-              
-                let answer = document.querySelector('h3');
-                answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Кого из людей считали Графом Дракулой?</h2>"
-                let test = document.querySelector('.go');
-                test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Влад Цепеш'><input type='button' class='btn2' value='Илона Силадьи'></div>"
-                function run7(){
-                    i++
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                function run8(){
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                let button = document.querySelector('.btn');
-                button.addEventListener('click', run7);
-                let button2 = document.querySelector('.btn2');
-                button2.addEventListener('click', run8);
-            }
-            let button = document.querySelector('.btn');
-            button.addEventListener('click', run5);
-            let button2 = document.querySelector('.btn2');
-            button2.addEventListener('click', run6);
+navigator.geolocation.getCurrentPosition(function (position) {
+    let latitude = 55.73506;
+    let longitude = 37.63893;
+    let map = new ol.Map({
+        target: 'map',
+        layers: [
+            new ol.layer.Tile({
+                source: new ol.source.OSM()
+            })
+        ],
+        view: new ol.View({
+            center: ol.proj.fromLonLat([longitude, latitude]),
+            zoom: 18
+        })
+    })
+});
+window.addEventListener('scroll', progressBar);
+$(document).ready(function(){
+    $('.karusel').bxSlider({
+        randomStart: true,
+        infiniteLoop: true,
+        auto: true,
+        pause: 4000,
         
-        }
-        function run4() {
-        
-            let answer = document.querySelector('h3');
-            answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Кем был создан образ графа Дракулы?</h2>"
-            let test = document.querySelector('.go');
-            test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Брэмомом Стокером'><input type='button' class='btn2' value='Джоном Хевином'></div>"
+   
+       });
+    });
+let condition = true;
+$('.menu_small_icon').click(function (){
+    if (condition) {
+        condition = false;
+        anime({
+            targets: '.menu-small',
+            translateX: ['-100%', '0'],
+            easing: 'easeInOutQuad',
+            direction: 'alternate',
+            duration: 1000,
+            loop: false
+        });
+    } else {
+        anime({
+            targets: '.menu-small',
+            translateX: ['0', '-100%'],
+            easing: 'easeInOutQuad',
+            direction: 'alternate',
+            duration: 1000,
+            loop: false
+        });
+        condition = true;
+}
+});
+$(document).on('click', 'body', function (e) {
+	$('<div class="cursor">')
+		.css({
+			top: e.clientY,
+			left: e.clientX
+		})
+		.appendTo($(document.body))
+		.on('animationend webkitAnimationEnd', function (e) {
+			$(this).remove();
+		});
+});
 
-            function run5() {
-                i++
-                let answer = document.querySelector('h3');
-                answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Кого из людей считали Графом Дракулой?</h2>"
-                let test = document.querySelector('.go');
-                test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Влад Цепеш'><input type='button' class='btn2' value='Илона Силадьи'></div>"
-                function run7(){
-                    i++
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                function run8(){
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                let button = document.querySelector('.btn');
-                button.addEventListener('click', run7);
-                let button2 = document.querySelector('.btn2');
-                button2.addEventListener('click', run8);
-            }
-            function run6() {
-    
-                let answer = document.querySelector('h3');
-                answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Кого из людей считали Графом Дракулой?</h2>"
-                let test = document.querySelector('.go');
-                test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Влад Цепеш'><input type='button' class='btn2' value='Илона Силадьи'></div>"
-                function run7(){
-                    i++
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                function run8(){
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                let button = document.querySelector('.btn');
-                button.addEventListener('click', run7);
-                let button2 = document.querySelector('.btn2');
-                button2.addEventListener('click', run8);
-            }
-            let button = document.querySelector('.btn');
-            button.addEventListener('click', run5);
-            let button2 = document.querySelector('.btn2');
-            button2.addEventListener('click', run6);
-        }
-        let button = document.querySelector('.btn');
-        button.addEventListener('click', run3);
-        let button2 = document.querySelector('.btn2');
-        button2.addEventListener('click', run4);
-    }
-    function run1() {
-        let answer = document.querySelector('h3');
-        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>В каком веке в США стал популярным хэллоуин?</h2>"
-        let test = document.querySelector('.go');
-        test.innerHTML = "<div class='answer'><input type='button' class='btn' value='XIX веке'><input type='button' class='btn2' value='XXI веке'></div>"
-        function run3() {
-            i++
-            let answer = document.querySelector('h3');
-            answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Кем был создан образ графа Дракулы?</h2>"
-            let test = document.querySelector('.go'); 
-            test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Брэмомом Стокером'><input type='button' class='btn2' value='Джоном Хевином'></div>"
-            function run5() {
-                i++
-                let answer = document.querySelector('h3');
-                answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Кого из людей считали Графом Дракулой?</h2>"
-                let test = document.querySelector('.go');
-                test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Влад Цепеш'><input type='button' class='btn2' value='Илона Силадьи'></div>"
-                function run7(){
-                    i++
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                function run8(){
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                let button = document.querySelector('.btn');
-                button.addEventListener('click', run7);
-                let button2 = document.querySelector('.btn2');
-                button2.addEventListener('click', run8);
-            }
-            function run6() {
-                let answer = document.querySelector('h3');
-                answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Кого из людей считали Графом Дракулой?</h2>"
-                let test = document.querySelector('.go');
-                test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Влад Цепеш'><input type='button' class='btn2' value='Илона Силадьи'></div>"
-                function run7(){
-                    i++
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                function run8(){
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                let button = document.querySelector('.btn');
-                button.addEventListener('click', run7);
-                let button2 = document.querySelector('.btn2');
-                button2.addEventListener('click', run8);
-            }
-            let button = document.querySelector('.btn');
-            button.addEventListener('click', run5);
-            let button2 = document.querySelector('.btn2');
-            button2.addEventListener('click', run6);
-        }
-        function run4() {
-        
-            let answer = document.querySelector('h3');
-            answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Кем был создан образ графа Дракулы?</h2>"
-            let test = document.querySelector('.go');
-            test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Брэмомом Стокером'><input type='button' class='btn2' value='Джоном Хевином'></div>"
-           
-            function run5() {
-                i++
-                let answer = document.querySelector('h3');
-                answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Кого из людей считали Графом Дракулой?</h2>"
-                let test = document.querySelector('.go');
-                test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Влад Цепеш'><input type='button' class='btn2' value='Илона Силадьи'></div>"
-                function run7(){
-                    i++
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                function run8(){
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                let button = document.querySelector('.btn');
-                button.addEventListener('click', run7);
-                let button2 = document.querySelector('.btn2');
-                button2.addEventListener('click', run8);
-            }
-            function run6() {
-              
-                let answer = document.querySelector('h3');
-                answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Кого из людей считали Графом Дракулой?</h2>"
-                let test = document.querySelector('.go');
-                test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Влад Цепеш'><input type='button' class='btn2' value='Илона Силадьи'></div>"
-                function run7(){
-                    i++
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                    function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                function run8(){
-                    let answer = document.querySelector('h3');
-                    answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Главный символ хеллоуина?</h2>"
-                    let test = document.querySelector('.go');
-                    test.innerHTML = "<div class='answer'><input type='button' class='btn' value='Тыква'><input type='button' class='btn2' value='Сладости'></div>"
-                   function run9(){
-                        console.log(i)
-                        i++
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                        
-                    }
-                    function run10(){
-                      
-                        let answer = document.querySelector('h3');
-                        answer.innerHTML = "<h2 style='color:aliceblue;;font-size:1em;'>Ваш результат:<div id='min' style='color:white;'>из 5</div> Счастливого хэллоина🕷</h2>"
-                        document.getElementById("min").innerHTML = i;
-                        test.innerHTML = "<div class='answer'></div>"
-                    }
-                    let button = document.querySelector('.btn');
-                    button.addEventListener('click', run9);
-                    let button2 = document.querySelector('.btn2');
-                    button2.addEventListener('click', run10);
-                }
-                let button = document.querySelector('.btn');
-                button.addEventListener('click', run7);
-                let button2 = document.querySelector('.btn2');
-                button2.addEventListener('click', run8);
-            }
-            let button = document.querySelector('.btn');
-            button.addEventListener('click', run5);
-            let button2 = document.querySelector('.btn2');
-            button2.addEventListener('click', run6);
-        }
-        let button = document.querySelector('.btn');
-        button.addEventListener('click', run3);
-        let button2 = document.querySelector('.btn2');
-        button2.addEventListener('click', run4);
-    }
+function progressBar() {
+    // Узнаем на сколько страница прокручена
+    let scroll = document.body.scrollTop || document.documentElement.scrollTop;
+    // Узнаем высоту всей страницы
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    // Получаем в % на сколько прокручена страница
+    let scrolled = scroll / height * 100;
 
-
-
-
-
-
-
-
-
-    
-    let button = document.querySelector('.btn');
-    button.addEventListener('click', run1);
-    let button2 = document.querySelector('.btn2');
-    button2.addEventListener('click', run2);
+    // Подставляем % прокрутки в ширину нашей линии
+    document.getElementById('progressBar').style.width = scrolled + '%';
 }
 
-
-let burger = document.querySelector(".burger-menu");
-let nav = document.querySelector(".main-nav");
-burger.addEventListener("click", function () {
-  burger.classList.toggle("active");
-  nav.classList.toggle("active");
-});
-let button = document.querySelector('.btn');
-button.addEventListener('click', run);
+// Запускаем функцию, когда пользователя скролит
