@@ -1,0 +1,308 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    display: table;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header {
+    background-color: #D3F6DB;
+
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+  
+}
+
+
+/*код навигации копировал с кодлэнда менять не букду :)*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.headerInner {
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    width:40%;
+    position: relative;
+    top:1em;
+}
+ul {
+    display:flex;
+    justify-content:space-between;
+}
+
+h2 {
+    font-size:30px;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+li {
+    list-style:none;
+}
+
+header a {
+    font-size: 25px;
+    text-decoration:none;
+    color: #000;
+    font-weight:800;
+}
+main{
+    background:#92D5E6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    display: table-row;
+    /* Чтобы ряд занимал всё оставшееся пространство, так как табличная разметка не позволит ему вытолкнуть header и footer */
+    height: 100%;
+ 
+}
+main h1{
+    text-align: center;
+    color: #FAFEED;
+
+}
+form {
+    display: flex;
+    width:30%;
+    align-items: center;
+    flex-direction: column;
+   
+}
+form a{
+font-size: 18px;
+position: relative;
+left:30%;
+bottom:1em;
+}
+
+input {
+    padding: 1em;
+    border-radius: 10px;
+    width:80%;
+    margin: 1.5em;
+}
+button {
+    background-color: #104547;
+    margin-top: 1%;
+	font-size: 20px;
+	padding: 10px 30px;
+	border: 0;
+	cursor: pointer;
+	color: white;
+	text-transform: lowercase;
+	border-radius: 10px;
+	display: inline-block;
+	overflow: hidden;
+	transition: all 0.4s cubic-bezier(.86, .01, .15, .99);
+}
+footer{
+    background-color: #595e4d;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 5%;                         
+    padding-top: 5%;
+    
+}
+
+footer h4{
+    color:#7F924B;
+    font-size: 30px;
+
+}
+footer p{
+    color: #FFFFFF;
+    font-size: 26px;
+}
+footer a {
+    color: #8d7818;
+}
+.menu_item {
+    margin-right: 1em;
+    display: flex;
+}
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+.progress-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 4px; 
+    width: 0%;
+    background:  #A8E4A0; 
+}
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background: black;
+ 
+}
+
+    @media only screen and (max-width: 992px) {
+        nav {
+            width:50%;
+        
+        }
+        footer p{
+            font-size: 22px;
+        }
+        main h2{
+            font-size:60px;
+        }
+    }
+
+@media only screen and (max-width: 768px) {
+    nav {
+        width:80%;
+    
+    }
+    button {
+        width:100%;
+       
+    }
+    input {
+
+        width:120%;
+      
+    }
+    form a{
+        font-size: 14px;
+       
+        }
+    footer p{
+        font-size: 14px;
+    }
+    footer h4{
+        color:#7F924B;
+        font-size: 22px;
+    
+    }
+    footer a {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 480px) {
+nav{
+    display: none;
+}
+
+button {
+    width:110%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+   
+}
+input {
+
+    width:150%;
+  
+}
+form a{
+    font-size: 12px;
+    left: 75%;
+    }
+
+footer p{
+    font-size: 12px;
+}
+footer h4{
+    color:#7F924B;
+    font-size: 18px;
+
+}
+footer a {
+    font-size: 12px;
+}
+.menu-small {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    background: white;
+    z-index: 999;
+    transform: translateX(-100%);
+}
+
+.menu_small_item {
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.menu_small_item:first-child {
+    padding-top: calc(50px + 2em);
+}
+footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu_small_icon {
+    position: absolute;
+    top: 1em;
+    left: 80%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+}
+@keyframes appear {
+	70%{
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+	100%{
+		opacity: 0;
+		transform: scale(0, 0);
+	}
+}
+@-webkit-keyframes appear {
+	70%{
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+	100%{
+		opacity: 0;
+		transform: scale(0, 0);
+	}
+}
+.cursor {
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	margin: -20px 0 0 -20px;
+	border-radius: 50%;
+	background: #ef2c68;
+	animation: appear .5s;
+	-webkit-animation: appear .5s;
+}
